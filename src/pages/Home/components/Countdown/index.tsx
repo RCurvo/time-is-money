@@ -32,8 +32,7 @@ export function Countdown() {
           markCurrentCycleAsFinished()
           setSecondsPassed(totalSeconds)
           clearInterval(interval)
-        }
-        setSecondsPassed(secondsDifference)
+        } else setSecondsPassed(secondsDifference)
       }, 1000)
     }
     return () => {
